@@ -90,7 +90,6 @@ with open(temp_file) as handle:
             print('Cluster_id containing highest score representative is [' + a.strip()[8:] + ']')
             print("Highest score representative from the above cluster is "+ line.split()[0] + " with a score of " + line.split()[1] + " kcal/mol")
 
-'''
 parser = argparse.ArgumentParser()
 parser.add_argument("-Rings", help = "Rings")
 parser.add_argument("-HBD", help = "HBD")
@@ -113,4 +112,3 @@ if a.strip()[8:] == ' '.join(map(str, pred)):
     print("Prediction : Input molecule can be a potent inhibitor against RPN11")
 else:
     print("Prediction : Input molecule doesn't belong to any cluster of potent inhibitors of RPN11")
-'''
