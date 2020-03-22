@@ -8,3 +8,6 @@ To reduce the number of small molecules to be docked into the binding pocket of 
 1.3 million small molecules have been clustered and only ~100,000 were selected for further docking.
 
 Validation has been done by docking all 1.3 million compounds and just 100,000 compounds to check minimal impact on number of hits to be obtained.
+
+# MD based classification of True vs False positives
+model_nn_md.job is trained on 824 ligand-RPN11 complex MD simulations to predict true vs false positives.
