@@ -14,13 +14,9 @@ import seaborn as sns
 sns.set(style='darkgrid')
 
 #Ask for file name and read the file
-#file_name = raw_input("Name of file:")
-#file_name = 'out_features_docking_pose'
 file_name = 'out_features200'
-#file_name = 'descriptors'
 #data = pd.read_excel(file_name + '.xlsx', header=0)
 data = pd.read_csv(file_name + '.csv', header=0)
-#analysis_type = input("Analysis Type 'R' or 'C': ")
 
 #Print number of rows and colums read
 print("{0} rows and {1} columns".format(len(data.index), len(data.columns)))
@@ -29,7 +25,6 @@ print("")
 #Defining X
 #X_raw = data.drop(['StayLeft','Lig'], axis=1)
 X_raw = data.drop(['Zn','StayLeft','ligand','LigRMSD','halogen','Hydrogen','Hydrophobic','pi'], axis=1)
-#X_raw = data.drop(['StayLeft','ligand','LigRMSD'], axis=1)
 #Normalizing or not the data
 min_max_scaler = preprocessing.MinMaxScaler()
 X = min_max_scaler.fit_transform(X_raw)
@@ -50,14 +45,8 @@ learn = ['constant', 'invscaling', 'adaptive']
 neural = MLPClassifier(activation=acti[2],
                        solver=algo[1],
                        learning_rate = learn[2], 
-                       hidden_layer_sizes=(20,),
+                       hidden_layer_sizes=(40,),
                        random_state=1,
-#                       learning_rate_init=0.0001,
-#                       warm_start=True,
-#                       alpha=0.001,
-#                       beta_1=0.5,
-#                       epsilon=1e-10,
-#                       n_jobs=-1,
                        max_iter=100000) 
 
 #Cross validation
