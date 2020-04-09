@@ -13,10 +13,13 @@ Validation has been done by docking all 1.3 million compounds and just 100,000 c
 model_nn_md.job is trained on 824 ligand-RPN11 complex MD simulations to predict true vs false positives.
 Input cosists of features derived from Onionnet(https://github.com/zhenglz/onionnet) and PaDelPy (https://github.com/ECRL/PaDELPy).
 
-Requirements: 
+Requirements:
 sklearn, numpy and pandas
 
 Usage:
+
 Step1 : python automated.py -Rings -HBA -HBD -RB -logP
+
 Step2 : if input == inhibitor: generate features from onionnet and padelpy
+
 Step3 : python predict.py -input features_filename
