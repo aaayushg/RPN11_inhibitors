@@ -9,6 +9,8 @@ To reduce the number of small molecules to be docked into the binding pocket of 
 
 Validation has been done by docking all 1.3 million compounds and just 100,000 compounds to check minimal impact on number of hits to be obtained.
 
+# Workflow
+
 # MD based classification of True vs False positives
 model_nn_md.job is trained on 824 ligand-RPN11 complex MD simulations to predict true vs false positives.
 Input cosists of features derived from Onionnet(https://github.com/zhenglz/onionnet) and PaDelPy (https://github.com/ECRL/PaDELPy).
