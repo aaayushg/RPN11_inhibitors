@@ -17,7 +17,7 @@ Y_Kmeans=load('model.joblib')
 # Selecting 10 representatives from each cluster which are
 # closer to the centroid of the clusters.
 
-temp_file="test3.txt"
+temp_file="pre_computed_scores.txt"
 
 count  =  0
 cutoff = -7.9
