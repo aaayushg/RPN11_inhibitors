@@ -34,6 +34,6 @@ Step2 : if input == inhibitor: generate features from onionnet and padelpy
 
 Step3 : python predict.py -input features_filename
 
-![](./fp.gif)
-![](./tp.gif)
+![](./tp.gif) ![](./fp.gif)
+
 
