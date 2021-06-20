@@ -33,3 +33,7 @@ Step1 : python automated.py -Rings -HBA -HBD -RB -logP
 Step2 : if input == inhibitor: generate features from onionnet and padelpy
 
 Step3 : python predict.py -input features_filename
+
+![](./fp.gif)
+![](./tp.gif)
+
