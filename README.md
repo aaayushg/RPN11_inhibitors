@@ -1,4 +1,4 @@
-# Libclusters
+# Clustering Drug Libraries
 
 Uses simple yet chemically important features to cluster small molecules. Presently, this code is designed to work with single receptor but idea can be easily framed to work with alomost every receptor.
 
