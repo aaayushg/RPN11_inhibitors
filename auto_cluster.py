@@ -12,7 +12,7 @@ from joblib import dump, load
 np.set_printoptions(threshold=sys.maxsize)
 
 #Directly load from the saved model
-Y_Kmeans=load('model.joblib')
+Y_Kmeans=load('kmeans_saved_model.joblib')
 
 # Selecting 10 representatives from each cluster which are
 # closer to the centroid of the clusters.
