@@ -1,4 +1,4 @@
-# Machine Learning-enabled pipeline for large scale virtual drug screening
+# Machine Learning-Enabled Pipeline for Large-Scale Virtual Drug Screening
 
 # Library Trimming
 
