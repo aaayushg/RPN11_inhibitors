@@ -6,9 +6,11 @@ We illustrated this work by clustering 1.3 million small molecules and diluting 
 
 Workflow:
 Step1. Fetch features from ZINC-ID
+
 ![](./tutorials/fetch_zn.gif)
 
 Step2. Prediction of cluster and potent inhibitors
+
 ![](./tutorials/cluster.gif)
 
 
