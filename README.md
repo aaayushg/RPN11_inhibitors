@@ -19,10 +19,10 @@ Requirements:
 sklearn, numpy, pandas, keras, and tensorflow
 
 Onionnet instructions: https://github.com/zhenglz/onionnet
-  python generate_features.py -inp inp.dat -out output.csv
+python generate_features.py -inp inp.dat -out output.csv
   
 PaDelpy Instructions: https://github.com/ecrl/padelpy
-  padeldescriptor(mol_dir='./', d_2d=True, d_3d=True, d_file='descriptors.csv')
+padeldescriptor(mol_dir='./', d_2d=True, d_3d=True, d_file='descriptors.csv')
 
 Usage:
 
