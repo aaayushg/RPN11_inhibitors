@@ -25,7 +25,8 @@ Onionnet:
 python generate_features.py -inp inp.dat -out output.csv
   
 PaDelpy:
-padeldescriptor(mol_dir='./', d_2d=True, d_3d=True, d_file='descriptors.csv')
+obabel -ipdb all.pdb -omdl -Oall.mdl
+padeldescriptor(mol_dir='./mdl_directory', d_2d=True, d_3d=True, d_file='descriptors.csv')
 
 Usage:
 
