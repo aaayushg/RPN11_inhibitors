@@ -36,6 +36,6 @@ Step2 : if input == inhibitor: run AutoDock Vina to generate pose and then onion
 
 Step3 : python  -input DNN_classification features_filename
 
-![](./tutorials/tp.gif) ![](./tutorials/fp.gif)
+![](./example_data/tp.gif) ![](./example_data/fp.gif)
 
 
